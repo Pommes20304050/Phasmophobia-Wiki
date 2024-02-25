@@ -1,0 +1,212 @@
+**Yurei**
+
+- Er kann deine geistliche Gesundheit um 15% senken, wenn er dies tut.
+- Wird er eine Tür schließen (oder öffnen Bug).
+- 30% Sanity, sehr aggressiv und aktiv.
+- Ein Räucherwerk kann den Yurei einsperren, wenn man den Raum räuchert. Nervig herauszufinden.
+- Yurei ist ein rarer Spawn, gerne außerhalb des Geisterraums.
+- Normale Geschwindigkeit: 1,7 m/s.
+
+**Moroi**
+
+- Je weniger geistliche Gesundheit man hat, desto schneller wird der Moroi.
+- Wenn man über 45% geistliche Gesundheit hat, ist er 1,5 m/s.
+- Über 35% geistliche Gesundheit hat, ist er 2,085 m/s.
+- Ab 0% geistliche Gesundheit hat, ist er 2,25 m/s.
+- Aber er kann immer noch schneller werden! Das bedeutet, dass er schneller als ein Revenant ist: 3,71 m/s.
+- Verflucht den Typen, der die erste Antwort von der Geisterbox oder ein Parabolmikrofon bekommt.
+- Um den Fluch zu brechen, nehmen Sie die geistlichen Gesundheitstabletten.
+- Dessen geistliche Gesundheit wird schneller sinken.
+- Jagt auf 50% geistliche Gesundheit.
+
+**Spirit**
+
+- Das Benutzen von Räucherstäbchen stoppt die Angriffe des Spirits für die doppelte Zeit, 3 Minuten Hunt stoppen, 
+  nicht nur 90 Sekunden, verglichen mit den anderen Geistern.
+- Normale Geschwindigkeit: 1,7m/s.
+
+**Obake**
+
+- Es gibt eine Chance, dass der Obake einen 6-Finger-Handabdruck hinterlässt.
+- Eine andere Fähigkeit ist, dass Fingerabdrücke für 50% weniger erhalten bleiben.
+- Während einer Jagd hat der Obake eine 1/15 (6,66%) Chance jedes Mal, wenn es flackert, sich in eine Gestalt zu verwandeln,
+  anderes Geistermodell des gleichen Geschlechts dazu zählt auch von laufen zu kriechen und andersrum.
+- Normale Geschwindigkeit: 1,7 m/s.
+
+**Gespenst**
+
+- Kann hinter einem spawnen, nun ihn töten und wird ein EMF 2 aussenden.
+- Kann nicht in Salz treten.
+- Normale Geschwindigkeit: 1,7 m/s.
+
+
+
+
+**Deogen**
+
+- Er wird mit 3 m/s laufen, wenn man entfernt von ihm ist, aber er wird langsamer auf kurze Distanz (0,4 m/s) und findet jedes Versteck.
+  Daher ist Verstecken nutzlos, und nur das Loopen ist sinnvoll.
+- Der Deogen wird immer die Geisterbox als Beweis haben, selbst wenn man nur mit einem Beweis spielt.
+- Jagt auf 40% geistliche Gesundheit.
+
+**Phantom**
+
+- Wird sich ein Ziel aussuchen und wird direkt zu seinem Ziel laufen. Um ihn zu erkennen, platziere ein Bewegungssensor.
+- Wenn es ein Ghost Event macht und man ihn fotografiert, wird es verschwinden und wird auf Fotos nicht zu sehen sein.
+- Er wird langsamer blinken und wird in einer Jagd mindestens 1 bis 2 Sekunden unsichtbar sein (bei anderen Geistern 0,3 bis 1 Sekunde).
+- Normale Geschwindigkeit: 1,7 m/s.
+- Jagt auf 50% geistliche Gesundheit.
+
+**Poltergeist**
+
+- Ein Haufen von Items platzieren, wenn sich alles bewegt, ist es ein Poltergeist. Er wirft auch viel weiter als jeder andere Geist. Also wirft MEHRERE Items.
+  Verringert die Geistliche Gesundheit um 25 pro geworfenem Item.
+- Während der Jagd kann er alle 0,5 Sekunden ein Gegenstand werfen (100%). Für normale Geister sind es alle 0,5 Sekunden 50%.
+
+**Banshee**
+
+- Der Banshee wird am Start der Runde sein Opfer wählen und wird erst ein neues wählen, wenn dieses Opfer tot ist. Wenn das Opfer nicht im Haus ist während einer Jagd,
+  kann er jeden töten, aber wenn das Opfer im Haus ist, wird er nur in der Lage sein, das Opfer zu töten.
+- Der Banshee jagt nur auf deren Opfers Geistliche Gesundheit, z.B. alle anderen sind bei 0%, aber das Opfer bei 100%, so wird er nicht jagen.
+- Mag es zu singen NUR in Geister-Events. Bei einem Event wird er dir 15% Geistliche Gesundheit abziehen.
+- Er kann auch zu seinem Opfer streifen/roamen.
+- Wenn man das Parabolmikrofon benutzt, kann man manchmal die Schreie hören. Dies liegt bei 30%. 4 Mal warten und hören ist das beste Erfolgschance: 83,7%.
+- Jagt ab 50% Geistliche Gesundheit.
+
+**Jinn**
+
+- Wenn man Nahe an ihm ist kann er deine Geistliche gesungheit um 25% senken, die man erkennen kann, da er am Stromkasten ein EMF 2 Signal aussendet. Dies kann er nur machen,
+  wenn der Stromkasten an ist.
+- Außerhalb von 3 Metern bewegt sich der Jinn mit 2,5 m/s, solange er dich nicht sieht und bestimmte Bedingungen erfüllt sind. Sobald er dich sieht und die Kriterien passen,
+  bleibt die Geschwindigkeit bei 2,5 m/s, solange diese Bedingungen erfüllt sind.
+- Kann nicht den Stromkasten ausmachen, es sei denn, ihr habt zum Beispiel die maximale Anzahl an Lichtern an und der Jinn macht ein zusätzliches an,
+  somit wird der Stromkasten ausgeschaltet.
+
+**Mare**
+
+- Er kann keine Lichtschalter Betätigen.
+- Er kann bei 60% im Dunkeln Jagen und bei 40% in Licht.
+- Er kann einen Lichtschalter Sofort ausschalten, wenn man in der Nähe ist (am besten im Geisteraum).
+- Er wird öfters Lampen zerstören als andere Geister in Geister-Events.
+
+**Revenant**
+
+- Er wird mit 1m/s jagen, sobald er aber ein Spieler IN Sicht hat, wird er sehr schnell 3m/s, selbst wenn er nur hört/seine Taschenlampe hat wird er 3m/s schnell.
+
+**Shade**
+
+- Er ist sehr Schüchtern er wird nicht jagen wenn viele leute im Haus sind
+- Er kann ab 35% Geistigergesungheit Jagen
+- Er hat eine 66% chance als ein Schatten in einem Geister even aufzutauchen
+- Je weniger Geistigesundheit die spieler haben, desto mehr ist die chance auf geister events
+- Er wird nicht Jagen wenn ein Spieler sich in seinem Geisteraum befindet
+- Er wird nichts werfen
+- Normal Speed 1.7m/s
+
+**Demon**
+
+- Er kann auf jedem Geistlichengesundheit level Jagen auch bei 100%
+- Er jagt normalerweise ab 70% Geistlichergesundheit
+- Ein Kruzifix hat einen buff um 2m der Normale Radius beträgt 3m, insgesamt 5m Radius ( durchmesser 10 METER )
+- Normale Geister haben einen 25 s Cooldown bevor sie weiter jagen können, aber der Demon hat nur 20 Sekunden Cooldown
+- Wenn Spieler ein räucherwerk benutzen wird seine Jagt nur für 60 s unterbrochen!
+- Normal Speed 1.7m/s
+
+**Oni**
+
+- Der Oni macht viel mehr Geister events als andere Geister
+- Wenn man von einem Geister event getroffen wird sinkt deine Geistliche gesundheit nicht um 10%, sondern um 20%
+- Beim jagen Blinkt er sehr schnell zwischen 0.1/s bis 0.5/s
+
+**Yokai**
+
+- Wenn du unter 80% Geistlichegesundheit bist und du redest kann er anfangen zu Jagen
+- Wenn er jagt kann er nur Stimmen hören in einem 2m Umkreis, auch deine Taschenlampe!
+- Yokais sind sehr Dumm
+- Je mehr Spieler reden, desto aktiver wird er
+- Er kann ab 80% Geistigergesungheit Jagen
+- Normal Speed 1.7m/s
+
+**Hantu**
+
+- Selbst wenn man nur 1/2 Hinweis/e Aktiviert hat bekommt man meistens einen mehr (gefriertemeraturen)
+- In Warmen räumen ist er wesentlich langsamer. Wenn die Temperatur über 15°C ist, bewegt er sich mit einer Geschwindigkeit von 1,4m/s
+- In Kalten räumen ist er wesentlich schneller. Wenn die Temperatur bis 0°C ist, kann er sich mit bis zu einer Geschwindigkeit von 2,7m/s bewegen
+- Er kann in einer Jagt nicht schneller werden
+- Der Hantu Deaktiviert den Stromkasten mehr als andere Geister
+- Er kann ab 15% Geistigergesungheit Jagen
+
+**Goryo**
+
+- Man kann Dots nur in einer Video-Kamera sehen
+- Wenn man keine Beweise bekommt und einfach nur wartet und z.B. nur mit Fingerabdrücken oder EMF 5, dann ist die Wahrscheinlichkeit hoch, dass dies ein Dummer Goryo ist
+- Der Goryo kann nicht seinen Geisterraum wechseln
+- Normal Speed 1.7m/s
+
+**Myling**
+
+- Er ist leise beim Jagen, man hört seine Fußschritte nicht, bis deine Taschenlampe startet auszurasten (starkes Geblinke) von 10m.
+- Normal Speed 1.7m/s
+
+**Onryo**
+
+- Wenn sich eine Kerze nahe des Onryos befindet, funktioniert es wie ein Kruzifix. Der Onryo kann dann in 4m nicht jagen.
+- Nachdem 3 Kerzen ausgeblasen wurden, hat der Onryo eine Chance zum Jagen auf jedem % der Geistlichen Gesundheit. Und nachdem er 3 Kerzen ausgeblasen hat,
+  hat er die Chance bei jeder weiteren ausgeblasenen Kerze eine neue Jagt zu beginnen.
+- Wenn der Onryo jemanden getötet hat, erhöht dies die Chance nach weiteren ausgeblasenen Kerzen, dass er eine Jagt beginnt.
+- Er kann ab 60% Geistiger Gesundheit jagen.
+- Normal Speed 1.7m/s
+
+**The Twins**
+
+- Es gibt eine Chance, wo 2 Interaktionen auf einmal passieren, wie 1 Gegenstand wird geworfen oder eine Tür berührt und direkt 0.5 s später ein anderer weit entfernt.
+  Dann kann man davon ausgehen, dass es Zwillinge sind, weil es in sehr kurzen Abständen viele Interaktionen macht.
+- Dann gäbe es noch eine Chance, wo er anfängt zu jagen, wo er seine letzte Interaktion gemacht hat (Türen / Gegenstände).
+  Er wird dort einfach dann spawnen und nicht direkt im Geisteraum.
+- Die Zwillinge haben auch einen Geschwindigkeitsunterschied von einmal 90% und 110%, daran kann man sie leicht erkennen (Normal Speed 1.7m/s).
+- Sie haben 2 Interaktionsweiten, einmal 3m und einmal 16m
+
+**Raiju**
+
+- Wenn elektronische Items nahe am Geist sind, kann es bereits ab 65% geistiger Gesundheit jagen, normal ohne diesen Effekt ab 50%.
+- Wenn in der Nähe elektronische Items angeschaltet sind, wird er schneller während einer Jagt mit 2.5m/s, sonst Normal Speed 1.7m/s.
+- Ein anderer Effekt wäre, dass bei der Jagt deine Taschenlampe sehr aktiv flackert, mehr als bei anderen Geistern in einem Radius von 15 m.
+
+**The Mimic**
+
+- Der Mimik zeigt dir 4 Beweise anstatt die Normalen 3.
+- Dieser Geist kann in jeden anderen beliebigen Geist sich verwandeln und deren Fähigkeiten verwenden, was ihn sehr gefährlich macht.
+  Zudem kann er auch deren Geschwindigkeit annehmen.
+- Fun fact: Der Mimik kann zu einem Mimik werden, heißt es hat keine besonderen Fähigkeiten oder eine besondere abgehobene Geschwindigkeit
+  und würde dann ab 15% geistlicher Gesundheit jagen.
+
+**Thaye**
+
+Der Geist hat einen Timer von 1 bis 2 Minuten, und wenn ein Spieler nahe am Geist ist, wenn der Timer abgelaufen ist, wird er um eine Stufe älter. Insgesamt gibt es 10 Stufen.
+
+Alle Fähigkeiten sind vernetzt mit dem Alter des Geistes:
+
+Bei einem jungen Geist:
+- Normal Speed 2.7m/s
+- Er kann ab 75% Geistiger Gesundheit jagen
+
+Bei einem alten Geist:
+- Normal Speed 1m/s
+- Er kann ab 15% Geistiger Gesundheit jagen
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

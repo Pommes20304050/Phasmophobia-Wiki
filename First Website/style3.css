@@ -1,0 +1,43 @@
+body{
+    background-color: #000;
+    color: #fff;
+    height: 100vh;
+    overflow: hidden;
+}
+
+pre{
+    font-family: monospace;
+    font-size: 10px;
+}
+
+button2 {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #075985;
+    color: #fff;
+    text-align: center;
+    padding: 8px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 13px;
+    border: none;
+    outline: none;
+}
+
+
+
+button2 {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+
+
+.donut-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}

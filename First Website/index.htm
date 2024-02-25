@@ -1,0 +1,1028 @@
+	<!DOCTYPE html>
+<html lang="De">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+   <style>
+   
+        /* Your existing styles here */
+/* Sidebar styles */
+.sidebar {
+    /* ... (existing styles) */
+    overflow-y: auto; /* Enable vertical scrolling */
+}
+
+/* Arrow down indicator */
+.sidebar::after {
+    content: '\25BC'; /* Unicode for down arrow */
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 24px;
+    opacity: 0; /* Hide by default */
+    transition: opacity 0.3s ease-in-out;
+}
+/* Inside the <style> tag of your HTML */
+/* Hide the scrollbar */
+.sidebar::-webkit-scrollbar {
+    width: 0; /* Remove scrollbar width */
+    background: transparent; /* Set scrollbar background to transparent */
+}
+
+        /* Sidebar styles */
+        .sidebar {
+            width: 250px;
+            height: 100%;
+            background-image: url('background.avif');
+            background-size: cover;
+            position: fixed;
+            transition: 0.3s;
+            box-shadow: 3px 0 5px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Sidebar hover effect */
+        .sidebar:hover {
+            width: 300px;
+        }
+
+        /* Content styles */
+        .content {
+            margin-left: 270px;
+            padding: 15px;
+            background-color: #f2f2f2;
+        }
+
+        /* Text color for sidebar links */
+        a {
+            color: white;
+            text-decoration: none;
+        }
+
+        /* Sidebar links */
+        .sidebar a {
+            padding: 10px 20px;
+            text-align: center;
+            display: block;
+            background-color: #555;
+            border-radius: 5px;
+            font-size: 16px;
+            margin: 10px 0;
+        }
+
+        /* Add some icons to your sidebar links */
+        .sidebar a[href="Main.html"]::before {
+            content: ' ';
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            background-image: url('heim.PNG');
+            background-size: cover;
+            margin-right: 10px;
+        }
+
+        .sidebar a[href="About.html"]::before {
+            content: ' ';
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            background-image: url('benutzer-hinzufugen.PNG');
+            background-size: cover;
+            margin-right: 10px;
+        }
+
+        .sidebar a[href="Download.html"]::before {
+            content: ' ';
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            background-image: url('mappe.PNG');
+            background-size: cover;
+            margin-right: 10px;
+        }
+
+        .sidebar a[href="Second.html"]::before {
+            content: ' ';
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            background-image: url('umschlag.PNG');
+            background-size: cover;
+            margin-right: 10px;
+        }
+
+        .sidebar a[href="Contact.html"]::before {
+            content: ' ';
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            background-image: url('umschlag.PNG');
+            background-size: cover;
+            margin-right: 10px;
+        }
+
+        /* Welcome section */
+        .welcome-section {
+         background-image: url('Download.jpg');
+         background-size: cover;
+         background-position: center;
+         color: black;
+         padding: 100px;
+         text-align: center;
+        }
+
+
+        /* Styling for the welcome message */
+        .welcome-message {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        /* Styling for the sub-message */
+        .sub-message {
+            font-size: 18px;
+        }
+
+        /* Calendar and Clock container styles */
+        #calendar, #clock {
+            margin-top: 20px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+
+
+    <html>
+        <head>
+            <style>
+                .sidebar a {
+                    display: block;
+                    padding: 8px 16px;
+                    text-decoration: none;
+                    color: #000; /* Set the default text color */
+                    transition: all 0.3s ease; /* Added transition for all properties */
+                    transform-origin: center;
+                }
+        
+                .sidebar a:hover {
+                    background-color: #f0f0f0; /* Change this to the color you want */
+                    /* Modify other styles like text color, font weight, etc. */
+                    transform: scale(1.1); /* Change the scale factor as needed */
+                }
+            </style>
+        </head>
+        <body>
+            <div class="sidebar">
+            <a href="index.htm" target="_self">Home</a>
+            <a href="Tarot.htm" target="_self">Tarot Cards</a>
+            <a href="Banshee.htm" target="_self">Banshee</a>
+            <a href="Demon.htm" target="_self">Demon</a>
+            <a href="Deogen.htm" target="_self">Deogen</a>
+            <a href="Goryo.htm" target="_self">Goryo</a>
+            <a href="Hantu.htm" target="_self">Hantu</a>
+            <a href="Jinn.htm" target="_self">Dschinn</a>
+            <a href="Mare.htm" target="_self">Mare</a>
+            <a href="Moroi.htm" target="_self">Moroi</a>
+            <a href="Myling.htm" target="_self">Myling</a>
+            <a href="Obake.htm" target="_self">Obake</a>
+            <a href="Oni.htm" target="_self">Oni</a>
+            <a href="Onryo.htm" target="_self">Onryo</a>
+            <a href="Phantom.htm" target="_self">Phantom</a>
+            <a href="Poltergeist.htm" target="_self">Poltergeist</a>
+            <a href="Raiju.htm" target="_self">Raiju</a>
+            <a href="Revenant.htm" target="_self">Revenant</a>
+            <a href="Shade.htm" target="_self">Shade</a>
+            <a href="Spirit.htm" target="_self">Spirit</a>
+            <a href="Thaye.htm" target="_self">Thaye</a>
+            <a href="The_Mimic.htm" target="_self">The Mimic</a>
+            <a href="The_Twins.htm" target="_self">The Twins</a>
+            <a href="Wraith.htm" target="_self">Wraith</a>
+            <a href="Yokai.htm" target="_self">Yokai</a>
+            <a href="Yurei.htm" target="_self">Yurei</a>
+            </div>
+        </body>
+        </html>
+        
+        
+
+
+<div class="content">
+    <!-- Welcome -->
+    <div class="welcome-section">
+        <h1 class="welcome-message">Welcome to Phasmophobia Wiki</h1>
+        <p class="sub-message">Thank you for visiting! Feel free to explore our website and enjoy the content.</p>
+        <div class="footer-info">
+            <p>This website was created by Pommes203040 (steam) and Pommes203040 (discord).</p>
+            <p>I would love to get new information or if I spelled something wrong, feel free to contact me!</p>
+            <!-- Link -->
+            <a href="#credits">Website-Erstellung Credits</a>
+        </div>
+    </div>
+
+
+    <!-- Kalendar -->
+    <div id="calendar"></div>
+
+    <!-- Clock container -->
+    <div id="clock"></div>
+
+    <!-- Other content goes here -->
+<head>
+    <style>
+   
+    .styled-box {
+        background-color: #fff; /* Hier die Farbe der Box setzen */
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin-top: 20px;
+        overflow: hidden; /* Inhalt verstecken, der �ber die Box hinausgeht */
+    }
+
+    /* F�gt die Hintergrundfarbe nach dem Text hinzu */
+    .content::after {
+        content: "";
+        display: block;
+        background-color: #f2f2f2; /* Hier die Hintergrundfarbe der Seite setzen */
+        height: 390px; /* H�he entsprechend anpassen */
+        margin-top: -380px; /* Negative Margin, um das �berlappen zu verhindern */
+    }
+        /* Copy button styles */
+        .copy-button {
+            background-color: #4CAF50;
+            color: white;
+			margin-right: 10px;
+			margin-top: 15px;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-bottom: 10px;
+        }
+
+        /* Download button styles */
+        .download-button {
+            background-color: #008CBA;
+            color: white;
+			 margin-right: 10px;
+			 margin-top: 15px;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+
+
+
+
+
+
+<div class="styled-box" style="display: flex; align-items: flex-start;">
+    <!-- Bild Container -->
+    <div style="margin-right: 10px;">
+        <img src="Kruzifix.png" alt="Banshee Bild" width="400" height="300">
+    </div>
+    
+    <!-- Text Container -->
+    <div style="font-family: Arial, sans-serif; font-size: 14px; line-height: 1.5;">
+        <h1 class="welcome-message">**Kruzifix**</h1>
+		<p style="max-width: 600px;">
+        <pre>
+        - Das Tier-1-Kreuz wird nach einer verhinderten Jagd zerstört, 
+          während Tier-2 und Tier-3 nach zwei Jagden zerstört werden. 
+        - Je höher das Tier, desto größer ist der abgedeckte Radius.
+        </pre>
+    </div>
+</div>
+
+
+
+
+<div class="styled-box" style="display: flex; align-items: flex-start;">
+    <!-- Bild Container -->
+    <div style="margin-right: 10px;">
+        <img src="EMF.png" alt="Banshee Bild" width="400" height="300">
+    </div>
+    
+    <!-- Text Container -->
+    <div style="font-family: Arial, sans-serif; font-size: 14px; line-height: 1.5;">
+        <h1 class="welcome-message">**EMF**</h1>
+		<p style="max-width: 600px;">
+        <pre>
+            
+       - Ein EMF-Reader ist ein Item, mit dem elektromagnetische Felder (EMF)
+         am aktuellen Standort abgelesen werden können.
+
+       - Nur der EMF-Reader kann bestätigen, ob der Geist einen EMF-Level-5-Beweis erbringt.
+
+       - EMF 2: Türen
+       - EMF 3: Gegenstände
+        </pre>
+    </div>
+</div>
+
+
+
+
+
+
+<div class="styled-box" style="display: flex; align-items: flex-start;">
+    <!-- Bild Container -->
+    <div style="margin-right: 10px;">
+        <img src="Bewegungssensor.png" alt="Banshee Bild" width="400" height="300">
+    </div>
+    
+    <!-- Text Container -->
+    <div style="font-family: Arial, sans-serif; font-size: 14px; line-height: 1.5;">
+        <h1 class="welcome-message">**Bewegungssensor**</h1>
+		<p style="max-width: 600px;">
+        <pre>
+        - Er kann helfen, die Bewegung des Geistes zu verfolgen, 
+          ist aber nicht besonders hilfreich nur für spezifische Aufgaben.
+        </pre>
+    </div>
+</div>
+
+
+
+
+<div class="styled-box" style="display: flex; align-items: flex-start;">
+    <!-- Bild Container -->
+    <div style="margin-right: 10px;">
+        <img src="Dots-Projektor.png" alt="Banshee Bild" width="400" height="300">
+    </div>
+    
+    <!-- Text Container -->
+    <div style="font-family: Arial, sans-serif; font-size: 14px; line-height: 1.5;">
+        <h1 class="welcome-message">**Dots-Projektor**</h1>
+		<p style="max-width: 600px;">
+        <pre>
+        - Der Dots-Projektor ist kaufbare Ausrüstung und zeigt Bewegungen von Geistern und Spielern, 
+          wenn sich der Geist bewegt.
+        </pre>
+    </div>
+</div>
+
+
+
+
+
+<div class="styled-box" style="display: flex; align-items: flex-start;">
+    <!-- Bild Container -->
+    <div style="margin-right: 10px;">
+        <img src="Feuerzeug.png" alt="Banshee Bild" width="400" height="300">
+    </div>
+    
+    <!-- Text Container -->
+    <div style="font-family: Arial, sans-serif; font-size: 14px; line-height: 1.5;">
+        <h1 class="welcome-message">**Feuerzeug**</h1>
+		<p style="max-width: 600px;">
+        <pre>
+        - Um Kerzen oder Räucherstäbchen anzuzünden, 
+          braucht man einfach nur ein Feuerzeug im Inventar.
+        - Alternativ kann man auch ein brennendes Feuerzeug in der Hand halten und damit entflammbare
+          Gegenstände vor sich oder in der Hand anderer Spieler anzünden.
+        </pre>
+    </div>
+</div>
+
+
+<div class="styled-box" style="display: flex; align-items: flex-start;">
+    <!-- Bild Container -->
+    <div style="margin-right: 10px;">
+        <img src="Kerzen.png" alt="Banshee Bild" width="400" height="300">
+    </div>
+    
+    <!-- Text Container -->
+    <div style="font-family: Arial, sans-serif; font-size: 14px; line-height: 1.5;">
+        <h1 class="welcome-message">**Kerzen**</h1>
+		<p style="max-width: 600px;">
+        <pre>
+        - Um eine Kerze zu entzünden, verwenden Sie ein Feuerzeug und drücken Sie "F".
+        - Wenn Geister in der Nähe sind, können sie Kerzen auspusten. 
+        - Kerzen können als Ersatzlichtquelle dienen und dabei helfen, 
+          einen Typ von einem Geist zu identifizieren. (Onryo)
+        </pre>
+    </div>
+</div>
+
+
+
+<div class="styled-box" style="display: flex; align-items: flex-start;">
+    <!-- Bild Container -->
+    <div style="margin-right: 10px;">
+        <img src="Geisterbox.png" alt="Banshee Bild" width="400" height="300">
+    </div>
+    
+    <!-- Text Container -->
+    <div style="font-family: Arial, sans-serif; font-size: 14px; line-height: 1.5;">
+        <h1 class="welcome-message">**Geisterbox**</h1>
+		<p style="max-width: 600px;">
+        <pre>     
+        - Die Geisterbox erlaubt es Spielern, Geistern Fragen zu stellen und weitere Infos zu erhalten.
+          Nur einige Geister antworten darüber, was als Beweis für ihre Identifizierung genutzt werden kann.  
+        </pre>
+    </div>
+</div>
+
+
+
+
+<div class="styled-box" style="display: flex; align-items: flex-start;">
+    <!-- Bild Container -->
+    <div style="margin-right: 10px;">
+        <img src="Geisterbuch.png" alt="Banshee Bild" width="400" height="300">
+    </div>
+    
+    <!-- Text Container -->
+    <div style="font-family: Arial, sans-serif; font-size: 14px; line-height: 1.5;">
+        <h1 class="welcome-message">**Geisterbuch**</h1>
+		<p style="max-width: 600px;">
+        <pre>
+       - Das Buch erlaubt Geistern zu schreiben, aber Dämonen tun dies möglicherweise früher. 
+         Es gibt keine erzwingbare Schreibweise; es kann zu jeder Zeit, unter allen Bedingungen passieren. 
+       - Aber je besser das Buch ist, desto wahrscheinlicher ist es, dass der Geist hineinschreibt.
+        </pre>
+    </div>
+</div>
+
+
+
+
+
+<div class="styled-box" style="display: flex; align-items: flex-start;">
+    <!-- Bild Container -->
+    <div style="margin-right: 10px;">
+        <img src="Stativ.png" alt="Banshee Bild" width="400" height="300">
+    </div>
+    
+    <!-- Text Container -->
+    <div style="font-family: Arial, sans-serif; font-size: 14px; line-height: 1.5;">
+        <h1 class="welcome-message">**Stativ**</h1>
+		<p style="max-width: 600px;">
+        <pre>
+        - Um eine Videokamera auf ein Stativ zu setzen, drückt man "F".
+          Wenn genügend Platz im Inventar ist, kann man das Stativ dann aufnehmen und woanders platzieren.
+        - Bessere Stative haben eine geringere Chance umzufallen.
+        </pre>
+    </div>
+</div>
+
+
+
+
+<div class="styled-box" style="display: flex; align-items: flex-start;">
+    <!-- Bild Container -->
+    <div style="margin-right: 10px;">
+        <img src="Kamera für das Stativ.png" alt="Banshee Bild" width="400" height="300">
+    </div>
+    
+    <!-- Text Container -->
+    <div style="font-family: Arial, sans-serif; font-size: 14px; line-height: 1.5;">
+        <h1 class="welcome-message">**Video Kamera**</h1>
+		<p style="max-width: 600px;">
+        <pre>
+        - Die Kamera hat einen Live-Feed zum Truck. 
+        - In Verbindung mit einem D.O.T.S. Projektor kann sie die schattigen Umrisse des Geistes sichtbar machen.
+        - Der Goryo zeigt sich ausschließlich vor der Kamera.
+        </pre>
+    </div>
+</div>
+
+
+
+
+
+<div class="styled-box" style="display: flex; align-items: flex-start;">
+    <!-- Bild Container -->
+    <div style="margin-right: 10px;">
+        <img src="Kamera.png" alt="Banshee Bild" width="400" height="300">
+    </div>
+    
+    <!-- Text Container -->
+    <div style="font-family: Arial, sans-serif; font-size: 14px; line-height: 1.5;">
+        <h1 class="welcome-message">**Kamera**</h1>
+		<p style="max-width: 600px;">
+        <pre>
+        - Die Fotokamera sammelt Beweise. Es können viele Fotos gemacht werden, 
+          aber nur 10 können Geld einbringen. Ein Foto erhält 1 bis 3 Sterne, 
+          abhängig von der Entfernung zum Motiv. 
+        - Je näher man dran ist, desto mehr Sterne gibt es.  
+        </pre>
+    </div>
+</div>
+
+
+
+
+
+<div class="styled-box" style="display: flex; align-items: flex-start;">
+    <!-- Bild Container -->
+    <div style="margin-right: 10px;">
+        <img src="Kerzen.png" alt="Banshee Bild" width="400" height="300">
+    </div>
+    
+    <!-- Text Container -->
+    <div style="font-family: Arial, sans-serif; font-size: 14px; line-height: 1.5;">
+        <h1 class="welcome-message">**Kerzen**</h1>
+		<p style="max-width: 600px;">
+        <pre>
+        - Um eine Kerze zu entzünden, verwenden Sie ein Feuerzeug und drücken Sie "F".
+        - Wenn Geister in der Nähe sind, können sie Kerzen auspusten. 
+        - Kerzen können als Ersatzlichtquelle dienen und dabei helfen, 
+          einen Typ von einem Geist zu identifizieren. (Onryo)
+        </pre>
+    </div>
+</div>
+
+
+
+
+<div class="styled-box" style="display: flex; align-items: flex-start;">
+    <!-- Bild Container -->
+    <div style="margin-right: 10px;">
+        <img src="Kopflampen.png" alt="Banshee Bild" width="400" height="300">
+    </div>
+    
+    <!-- Text Container -->
+    <div style="font-family: Arial, sans-serif; font-size: 14px; line-height: 1.5;">
+        <h1 class="welcome-message">**Kopflampen**</h1>
+		<p style="max-width: 600px;">
+        <pre>
+        - Kopfkameras beanspruchen keinen Platz im Inventar.
+          Sie zeigen immer in die Richtung, in die der Spieler gerade schaut.
+        </pre>
+    </div>
+</div>
+
+
+
+
+<div class="styled-box" style="display: flex; align-items: flex-start;">
+    <!-- Bild Container -->
+    <div style="margin-right: 10px;">
+        <img src="Mikrofon.png" alt="Banshee Bild" width="400" height="300">
+    </div>
+    
+    <!-- Text Container -->
+    <div style="font-family: Arial, sans-serif; font-size: 14px; line-height: 1.5;">
+        <h1 class="welcome-message">**Mikrofon**</h1>
+		<p style="max-width: 600px;">
+        <pre>
+        - Das Mikrofon erfasst Geräusche im Bereich davor und markiert diesen gelb 
+          auf der Übersichtskarte im Truck. Alle Geräusche, auch Spielergeräusche, werden im Truck angezeigt.
+          Dort kann man die Lautstärke und die Herkunft des Sounds sehen. 
+        - Es funktioniert praktisch wie ein platzierbares Parabol-Mikrofon. 
+        </pre>
+    </div>
+</div>
+
+
+
+
+<div class="styled-box" style="display: flex; align-items: flex-start;">
+    <!-- Bild Container -->
+    <div style="margin-right: 10px;">
+        <img src="Parabol-Mikrofon.png" alt="Banshee Bild" width="400" height="300">
+    </div>
+    
+    <!-- Text Container -->
+    <div style="font-family: Arial, sans-serif; font-size: 14px; line-height: 1.5;">
+        <h1 class="welcome-message">**Parabol-Mikrofon**</h1>
+		<p style="max-width: 600px;">
+        <pre>
+        - Wenn Geister interagieren, z. B. eine Tür öffnen oder etwas werfen,
+          zeigt das Parabolmikrofon für etwa drei Sekunden einen Wert zwischen 1.0 und 3.0 an.
+        - Mehrere gleichzeitige Geräusche werden addiert und auf dem Display angezeigt.
+        - Geräusche von:Truck, Tür, EMF Reader, Geisterbox, Fußspuren, Sicherungskasten, 
+          Geist wirft einen Gegenstand, Kamera-Foto, Bewegungssensor, Ouija-Brett, Sanity Pillen,
+          Sprechende Spieler, Salz, Waschbecken, Thermometer, Taschenlampen.
+        </pre>
+    </div>
+</div>
+
+
+
+
+<div class="styled-box" style="display: flex; align-items: flex-start;">
+    <!-- Bild Container -->
+    <div style="margin-right: 10px;">
+        <img src="Räucherwerk.png" alt="Banshee Bild" width="400" height="300">
+    </div>
+    
+    <!-- Text Container -->
+    <div style="font-family: Arial, sans-serif; font-size: 14px; line-height: 1.5;">
+        <h1 class="welcome-message">**Räucherwerk**</h1>
+		<p style="max-width: 600px;">
+        <pre>
+        - Räucherstäbchen sind einmal benutzbare Gegenstände, die kurzzeitig verhindern,
+          dass Geister auf die Jagd gehen. Yureis und Spirits reagieren besonders darauf.
+        - Man braucht ein Feuerzeug im Inventar, um sie anzuzünden, oder eine Kerze tut es auch.
+          Einmal angezündet, wirken sie 6 Sekunden lang. Innerhalb von 6 Metern erhöhen sie leicht die Geisteraktivität.
+          Geister können dann 90 Sekunden nicht jagen (Spirits 180 Sekunden)
+        </pre>
+    </div>
+</div>
+
+
+
+
+
+
+
+<div class="styled-box" style="display: flex; align-items: flex-start;">
+    <!-- Bild Container -->
+    <div style="margin-right: 10px;">
+        <img src="Tabletten.png" alt="Banshee Bild" width="400" height="300">
+    </div>
+    
+    <!-- Text Container -->
+    <div style="font-family: Arial, sans-serif; font-size: 14px; line-height: 1.5;">
+        <h1 class="welcome-message">**Tabletten**</h1>
+		<p style="max-width: 600px;">
+        <pre>
+        - Sanity Pillen sind dazu da, die geistige Gesundheit deines Charakters zu boosten.
+        - Je nach Schwierigkeitsgrad erhöht sich die geistige Gesundheit bei der Einnahme um 40%, 
+          kann aber auch weniger sein, bis zu 0%, je nachdem, wie hart das Spiel gerade eingestellt ist. 
+        </pre>
+    </div>
+</div>
+
+
+
+
+<div class="styled-box" style="display: flex; align-items: flex-start;">
+    <!-- Bild Container -->
+    <div style="margin-right: 10px;">
+        <img src="Taschenlampe.png" alt="Banshee Bild" width="400" height="300">
+    </div>
+    
+    <!-- Text Container -->
+    <div style="font-family: Arial, sans-serif; font-size: 14px; line-height: 1.5;">
+        <h1 class="welcome-message">**Taschenlampe**</h1>
+		<p style="max-width: 600px;">
+        <pre>
+        - Taschenlampen sind die Hauptlichtquelle,
+          wenn es dunkel wird. Es gibt zwei Varianten: 
+          die gewöhnliche Taschenlampe und die leistungsstärkere Variante,
+          die einfach mehr Licht spendet.
+        </pre>
+    </div>
+</div>
+
+
+
+
+<div class="styled-box" style="display: flex; align-items: flex-start;">
+    <!-- Bild Container -->
+    <div style="margin-right: 10px;">
+        <img src="Thermometer.png" alt="Banshee Bild" width="400" height="300">
+    </div>
+    
+    <!-- Text Container -->
+    <div style="font-family: Arial, sans-serif; font-size: 14px; line-height: 1.5;">
+        <h1 class="welcome-message">**Thermometer**</h1>
+		<p style="max-width: 600px;">
+        <pre>
+        - Das Thermometer, misst die aktuelle Raumtemperatur oder die Temperatur 
+          an bestimmten Stellen im Raum. Es hilft dabei,
+          Beweise für Gefrierpunkte zu finden und den Ort des Geisterraums festzustellen.
+        </pre>
+    </div>
+</div>
+
+
+
+
+<div class="styled-box" style="display: flex; align-items: flex-start;">
+    <!-- Bild Container -->
+    <div style="margin-right: 10px;">
+        <img src="UV-Lampen.png" alt="Banshee Bild" width="400" height="300">
+    </div>
+    
+
+    <!-- Text Container -->
+    <div style="font-family: Arial, sans-serif; font-size: 14px; line-height: 1.5;">
+        <h1 class="welcome-message">**UV-Lampen**</h1>
+		<p style="max-width: 600px;">
+        <pre>
+        - Die UV-Taschenlampe zeigt Fingerabdrücke an Türen und Lichtschaltern sowie Fußspuren auf dem Boden. 
+          Fingerabdrücke liefern wichtige Hinweise auf bestimmte Geisterarten, 
+          Fotos von Fingerabdrücken oder Fußspuren im Journal bringen zusätzliches Geld ein, auch ohne UV-Licht.
+        </pre>
+    </div>
+</div>
+
+
+
+
+
+
+    <!-- Download and Copy buttons above "AMMO" -->
+    <button class="download-button" onclick="downloadFile()">Download </button>
+
+    <button class="copy-button" onclick="copyText()">Copy Text</button>
+
+    <!-- Stylish box with text content -->
+    <div class="styled-box">
+        <pre id="textContent">
+**Yurei**
+
+- Er kann deine geistliche Gesundheit um 15% senken, wenn er dies tut.
+- Wird er eine T�r schlie�en (oder �ffnen Bug).
+- 30% Sanity, sehr aggressiv und aktiv.
+- Ein R�ucherwerk kann den Yurei einsperren, wenn man den Raum r�uchert. Nervig herauszufinden.
+- Yurei ist ein rarer Spawn, gerne au�erhalb des Geisterraums.
+- Normale Geschwindigkeit: 1,7 m/s.
+
+**Moroi**
+
+- Je weniger geistliche Gesundheit man hat, desto schneller wird der Moroi.
+- Wenn man �ber 45% geistliche Gesundheit hat, ist er 1,5 m/s.
+- �ber 35% geistliche Gesundheit hat, ist er 2,085 m/s.
+- Ab 0% geistliche Gesundheit hat, ist er 2,25 m/s.
+- Aber er kann immer noch schneller werden! Das bedeutet, dass er schneller als ein Revenant ist: 3,71 m/s.
+- Verflucht den Typen, der die erste Antwort von der Geisterbox oder ein Parabolmikrofon bekommt.
+- Um den Fluch zu brechen, nehmen Sie die geistlichen Gesundheitstabletten.
+- Dessen geistliche Gesundheit wird schneller sinken.
+- Jagt auf 50% geistliche Gesundheit.
+
+**Spirit**
+
+- Das Benutzen von R�ucherst�bchen stoppt die Angriffe des Spirits f�r die doppelte Zeit, 3 Minuten Hunt stoppen, 
+  nicht nur 90 Sekunden, verglichen mit den anderen Geistern.
+- Normale Geschwindigkeit: 1,7m/s.
+
+**Obake**
+
+- Es gibt eine Chance, dass der Obake einen 6-Finger-Handabdruck hinterl�sst.
+- Eine andere F�higkeit ist, dass Fingerabdr�cke f�r 50% weniger erhalten bleiben.
+- W�hrend einer Jagd hat der Obake eine 1/15 (6,66%) Chance jedes Mal, wenn es flackert, sich in eine Gestalt zu verwandeln,
+  anderes Geistermodell des gleichen Geschlechts dazu z�hlt auch von laufen zu kriechen und andersrum.
+- Normale Geschwindigkeit: 1,7 m/s.
+
+**Gespenst**
+
+- Kann hinter einem spawnen, nun ihn t�ten und wird ein EMF 2 aussenden.
+- Kann nicht in Salz treten.
+- Normale Geschwindigkeit: 1,7 m/s.
+
+**Deogen**
+
+- Er wird mit 3 m/s laufen, wenn man entfernt von ihm ist, aber er wird langsamer auf kurze Distanz (0,4 m/s) und findet jedes Versteck.
+  Daher ist Verstecken nutzlos, und nur das Loopen ist sinnvoll.
+- Der Deogen wird immer die Geisterbox als Beweis haben, selbst wenn man nur mit einem Beweis spielt.
+- Jagt auf 40% geistliche Gesundheit.
+
+**Phantom**
+
+- Wird sich ein Ziel aussuchen und wird direkt zu seinem Ziel laufen. Um ihn zu erkennen, platziere ein Bewegungssensor.
+- Wenn es ein Ghost Event macht und man ihn fotografiert, wird es verschwinden und wird auf Fotos nicht zu sehen sein.
+- Er wird langsamer blinken und wird in einer Jagd mindestens 1 bis 2 Sekunden unsichtbar sein (bei anderen Geistern 0,3 bis 1 Sekunde).
+- Normale Geschwindigkeit: 1,7 m/s.
+- Jagt auf 50% geistliche Gesundheit.
+
+**Poltergeist**
+
+- Ein Haufen von Items platzieren, wenn sich alles bewegt, ist es ein Poltergeist. Er wirft auch viel weiter als jeder andere Geist. Also wirft MEHRERE Items.
+  Verringert die Geistliche Gesundheit um 25 pro geworfenem Item.
+- W�hrend der Jagd kann er alle 0,5 Sekunden ein Gegenstand werfen (100%). F�r normale Geister sind es alle 0,5 Sekunden 50%.
+
+**Banshee**
+
+- Der Banshee wird am Start der Runde sein Opfer w�hlen und wird erst ein neues w�hlen, wenn dieses Opfer tot ist. Wenn das Opfer nicht im Haus ist w�hrend einer Jagd,
+  kann er jeden t�ten, aber wenn das Opfer im Haus ist, wird er nur in der Lage sein, das Opfer zu t�ten.
+- Der Banshee jagt nur auf deren Opfers Geistliche Gesundheit, z.B. alle anderen sind bei 0%, aber das Opfer bei 100%, so wird er nicht jagen.
+- Mag es zu singen NUR in Geister-Events. Bei einem Event wird er dir 15% Geistliche Gesundheit abziehen.
+- Er kann auch zu seinem Opfer streifen/roamen.
+- Wenn man das Parabolmikrofon benutzt, kann man manchmal die Schreie h�ren. Dies liegt bei 30%. 4 Mal warten und h�ren ist das beste Erfolgschance: 83,7%.
+- Jagt ab 50% Geistliche Gesundheit.
+
+**Dschinn**
+
+- Wenn man Nahe an ihm ist kann er deine Geistliche gesungheit um 25% senken, die man erkennen kann, da er am Stromkasten ein EMF 2 Signal aussendet. Dies kann er nur machen,
+  wenn der Stromkasten an ist.
+- Au�erhalb von 3 Metern bewegt sich der Dschinn mit 2,5 m/s, solange er dich nicht sieht und bestimmte Bedingungen erf�llt sind. Sobald er dich sieht und die Kriterien passen,
+  bleibt die Geschwindigkeit bei 2,5 m/s, solange diese Bedingungen erf�llt sind.
+- Kann nicht den Stromkasten ausmachen, es sei denn, ihr habt zum Beispiel die maximale Anzahl an Lichtern an und der Dschinn macht ein zus�tzliches an,
+  somit wird der Stromkasten ausgeschaltet.
+
+**Mare**
+
+- Er kann keine Lichtschalter Bet�tigen.
+- Er kann bei 60% im Dunkeln Jagen und bei 40% in Licht.
+- Er kann einen Lichtschalter Sofort ausschalten, wenn man in der N�he ist (am besten im Geisteraum).
+- Er wird �fters Lampen zerst�ren als andere Geister in Geister-Events.
+
+**Revenant**
+
+- Er wird mit 1m/s jagen, sobald er aber ein Spieler IN Sicht hat, wird er sehr schnell 3m/s, selbst wenn er nur h�rt/seine Taschenlampe hat wird er 3m/s schnell.
+
+**Shade**
+
+- Er ist sehr Sch�chtern er wird nicht jagen wenn viele leute im Haus sind
+- Er kann ab 35% Geistigergesungheit Jagen
+- Er hat eine 66% chance als ein Schatten in einem Geister even aufzutauchen
+- Je weniger Geistigesundheit die spieler haben, desto mehr ist die chance auf geister events
+- Er wird nicht Jagen wenn ein Spieler sich in seinem Geisteraum befindet
+- Er wird nichts werfen
+- Normal Speed 1.7m/s
+
+**Demon**
+
+- Er kann auf jedem Geistlichengesundheit level Jagen auch bei 100%
+- Er jagt normalerweise ab 70% Geistlichergesundheit
+- Ein Kruzifix hat einen buff um 2m der Normale Radius betr�gt 3m, insgesamt 5m Radius ( durchmesser 10 METER )
+- Normale Geister haben einen 25 s Cooldown bevor sie weiter jagen k�nnen, aber der Demon hat nur 20 Sekunden Cooldown
+- Wenn Spieler ein r�ucherwerk benutzen wird seine Jagt nur f�r 60 s unterbrochen!
+- Normal Speed 1.7m/s
+
+**Oni**
+
+- Der Oni macht viel mehr Geister events als andere Geister
+- Wenn man von einem Geister event getroffen wird sinkt deine Geistliche gesundheit nicht um 10%, sondern um 20%
+- Beim jagen Blinkt er sehr schnell zwischen 0.1/s bis 0.5/s
+
+**Yokai**
+
+- Wenn du unter 80% Geistlichegesundheit bist und du redest kann er anfangen zu Jagen
+- Wenn er jagt kann er nur Stimmen h�ren in einem 2m Umkreis, auch deine Taschenlampe!
+- Yokais sind sehr Dumm
+- Je mehr Spieler reden, desto aktiver wird er
+- Er kann ab 80% Geistigergesungheit Jagen
+- Normal Speed 1.7m/s
+
+**Hantu**
+
+- Selbst wenn man nur 1/2 Hinweis/e Aktiviert hat bekommt man meistens einen mehr (gefriertemeraturen)
+- In Warmen r�umen ist er wesentlich langsamer. Wenn die Temperatur �ber 15�C ist, bewegt er sich mit einer Geschwindigkeit von 1,4m/s
+- In Kalten r�umen ist er wesentlich schneller. Wenn die Temperatur bis 0�C ist, kann er sich mit bis zu einer Geschwindigkeit von 2,7m/s bewegen
+- Er kann in einer Jagt nicht schneller werden
+- Der Hantu Deaktiviert den Stromkasten mehr als andere Geister
+- Er kann ab 15% Geistigergesungheit Jagen
+
+**Goryo**
+
+- Man kann Dots nur in einer Video-Kamera sehen
+- Wenn man keine Beweise bekommt und einfach nur wartet und z.B. nur mit Fingerabdr�cken oder EMF 5, dann ist die Wahrscheinlichkeit hoch, dass dies ein Dummer Goryo ist
+- Der Goryo kann nicht seinen Geisterraum wechseln
+- Normal Speed 1.7m/s
+
+**Myling**
+
+- Er ist leise beim Jagen, man h�rt seine Fu�schritte nicht, bis deine Taschenlampe startet auszurasten (starkes Geblinke) von 10m.
+- Normal Speed 1.7m/s
+
+**Onryo**
+
+- Wenn sich eine Kerze nahe des Onryos befindet, funktioniert es wie ein Kruzifix. Der Onryo kann dann in 4m nicht jagen.
+- Nachdem 3 Kerzen ausgeblasen wurden, hat der Onryo eine Chance zum Jagen auf jedem % der Geistlichen Gesundheit. Und nachdem er 3 Kerzen ausgeblasen hat,
+  hat er die Chance bei jeder weiteren ausgeblasenen Kerze eine neue Jagt zu beginnen.
+- Wenn der Onryo jemanden get�tet hat, erh�ht dies die Chance nach weiteren ausgeblasenen Kerzen, dass er eine Jagt beginnt.
+- Er kann ab 60% Geistiger Gesundheit jagen.
+- Normal Speed 1.7m/s
+
+**The Twins**
+
+- Es gibt eine Chance, wo 2 Interaktionen auf einmal passieren, wie 1 Gegenstand wird geworfen oder eine T�r ber�hrt und direkt 0.5 s sp�ter ein anderer weit entfernt.
+  Dann kann man davon ausgehen, dass es Zwillinge sind, weil es in sehr kurzen Abst�nden viele Interaktionen macht.
+- Dann g�be es noch eine Chance, wo er anf�ngt zu jagen, wo er seine letzte Interaktion gemacht hat (T�ren / Gegenst�nde).
+  Er wird dort einfach dann spawnen und nicht direkt im Geisteraum.
+- Die Zwillinge haben auch einen Geschwindigkeitsunterschied von einmal 90% und 110%, daran kann man sie leicht erkennen (Normal Speed 1.7m/s).
+- Sie haben 2 Interaktionsweiten, einmal 3m und einmal 16m
+
+**Raiju**
+
+- Wenn elektronische Items nahe am Geist sind, kann es bereits ab 65% geistiger Gesundheit jagen, normal ohne diesen Effekt ab 50%.
+- Wenn in der N�he elektronische Items angeschaltet sind, wird er schneller w�hrend einer Jagt mit 2.5m/s, sonst Normal Speed 1.7m/s.
+- Ein anderer Effekt w�re, dass bei der Jagt deine Taschenlampe sehr aktiv flackert, mehr als bei anderen Geistern in einem Radius von 15 m.
+
+**The Mimic**
+
+- Der Mimik zeigt dir 4 Beweise anstatt die Normalen 3.
+- Dieser Geist kann in jeden anderen beliebigen Geist sich verwandeln und deren F�higkeiten verwenden, was ihn sehr gef�hrlich macht.
+  Zudem kann er auch deren Geschwindigkeit annehmen.
+- Fun fact: Der Mimik kann zu einem Mimik werden, hei�t es hat keine besonderen F�higkeiten oder eine besondere abgehobene Geschwindigkeit
+  und w�rde dann ab 15% geistlicher Gesundheit jagen.
+
+**Thaye**
+
+Der Geist hat einen Timer von 1 bis 2 Minuten, und wenn ein Spieler nahe am Geist ist, wenn der Timer abgelaufen ist, wird er um eine Stufe �lter. Insgesamt gibt es 10 Stufen.
+
+Alle F�higkeiten sind vernetzt mit dem Alter des Geistes:
+
+Bei einem jungen Geist:
+- Normal Speed 2.7m/s
+- Er kann ab 75% Geistiger Gesundheit jagen
+
+Bei einem alten Geist:
+- Normal Speed 1m/s
+- Er kann ab 15% Geistiger Gesundheit jagen
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </pre>
+		    <div id="credits">
+        <h2>Website-Erstellung Credits</h2>
+        <p>Diese Website wurde erstellt von Pommes203040 (steam) und Pommes203040 (discord).</p>
+        <p>Ein Besonderen Dank an Diese Personen:</p>
+	<div style="display: flex; justify-content: space-between; margin-top: 30px;">
+    <div style="text-align: center;">
+        <img src="Profile1.png" alt="Profile Picture 1" style="width: 100px; height: 100px; border-radius: 50%;">
+        <div style="margin-top: 10px;">No One</div>
+    </div>
+    <div style="text-align: center;">
+        <img src="Profile2.png" alt="Profile Picture 2" style="width: 100px; height: 100px; border-radius: 50%;">
+        <div style="margin-top: 10px;">No One</div>
+    </div>
+    <div style="text-align: center;">
+        <img src="Profile3.png" alt="Profile Picture 3" style="width: 100px; height: 100px; border-radius: 50%;">
+        <div style="margin-top: 10px;">No One</div>
+    </div>
+    <div style="text-align: center;">
+        <img src="Profile4.png" alt="Profile Picture 4" style="width: 100px; height: 100px; border-radius: 50%;">
+        <div style="margin-top: 10px;">No One</div>
+    </div>
+</div>
+</div>
+    </div>
+
+    </div>
+</div>
+
+<script>
+    function copyText() {
+        var textArea = document.getElementById("textContent");
+        var text = textArea.innerText || textArea.textContent;
+        
+        navigator.clipboard.writeText(text).then(function() {
+            alert("Text copied to clipboard!");
+        }).catch(function(err) {
+            console.error('Unable to copy text to clipboard', err);
+        });
+    }
+
+    function downloadFile() {
+        var text = document.getElementById("textContent").innerText;
+        var blob = new Blob([text], { type: "text/plain" });
+        var url = URL.createObjectURL(blob);
+        var a = document.createElement("a");
+        a.href = url;
+        a.download = "Phasmophobia Geister.txt";
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+        URL.revokeObjectURL(url);
+    }
+</script>
+
+<script>
+    function navigateTo(page) {
+        window.location.href = page;
+    }
+</script>
+
+</body>
+</html>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        // Clock
+        function updateClock() {
+            var now = new Date();
+            var hours = now.getHours();
+            var minutes = now.getMinutes();
+            var seconds = now.getSeconds();
+
+            document.getElementById('clock').innerHTML = `${hours}:${minutes}:${seconds}`;
+        }
+
+        setInterval(updateClock, 1000); // ev. second
+        updateClock(); 
+
+        
+        var today = new Date();
+        var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+        document.getElementById('calendar').innerHTML = today.toLocaleDateString('en-US', options);
+    });
+</script>
+
+</body>
+</html>

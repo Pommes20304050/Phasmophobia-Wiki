@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="De">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <style>
+        /* Your existing styles here */
+/* Sidebar styles */
+.sidebar {
+    /* ... (existing styles) */
+    overflow-y: auto; /* Enable vertical scrolling */
+}
+
+/* Arrow down indicator */
+.sidebar::after {
+    content: '\25BC'; /* Unicode for down arrow */
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 24px;
+    opacity: 0; /* Hide by default */
+    transition: opacity 0.3s ease-in-out;
+}
+/* Inside the <style> tag of your HTML */
+/* Hide the scrollbar */
+.sidebar::-webkit-scrollbar {
+    width: 0; /* Remove scrollbar width */
+    background: transparent; /* Set scrollbar background to transparent */
+}
+
+        /* Sidebar styles */
+        .sidebar {
+            width: 250px;
+            height: 100%;
+            background-image: url('background.avif');
+            background-size: cover;
+            position: fixed;
+            transition: 0.3s;
+            box-shadow: 3px 0 5px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Sidebar hover effect */
+        .sidebar:hover {
+            width: 300px;
+        }
+
+        /* Content styles */
+        .content {
+            margin-left: 270px;
+            padding: 15px;
+            background-color: #f2f2f2;
+        }
+
+        /* Text color for sidebar links */
+        a {
+            color: white;
+            text-decoration: none;
+        }
+
+        /* Sidebar links */
+        .sidebar a {
+            padding: 10px 20px;
+            text-align: center;
+            display: block;
+            background-color: #555;
+            border-radius: 5px;
+            font-size: 16px;
+            margin: 10px 0;
+        }
+
+        /* Add some icons to your sidebar links */
+        .sidebar a[href="Main.html"]::before {
+            content: ' ';
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            background-image: url('heim.PNG');
+            background-size: cover;
+            margin-right: 10px;
+        }
+
+        .sidebar a[href="About.html"]::before {
+            content: ' ';
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            background-image: url('benutzer-hinzufugen.PNG');
+            background-size: cover;
+            margin-right: 10px;
+        }
+
+        .sidebar a[href="Download.html"]::before {
+            content: ' ';
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            background-image: url('mappe.PNG');
+            background-size: cover;
+            margin-right: 10px;
+        }
+
+        .sidebar a[href="Second.html"]::before {
+            content: ' ';
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            background-image: url('umschlag.PNG');
+            background-size: cover;
+            margin-right: 10px;
+        }
+
+        .sidebar a[href="Contact.html"]::before {
+            content: ' ';
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            background-image: url('umschlag.PNG');
+            background-size: cover;
+            margin-right: 10px;
+        }
+
+        /* Welcome section */
+        .welcome-section {
+         background-image: url('Download.jpg');
+         background-size: cover;
+         background-position: center;
+         color: black;
+         padding: 100px;
+         text-align: center;
+        }
+
+
+        /* Styling for the welcome message */
+        .welcome-message {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        /* Styling for the sub-message */
+        .sub-message {
+            font-size: 18px;
+        }
+
+        /* Calendar and Clock container styles */
+        #calendar, #clock {
+            margin-top: 20px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+
+
+    <html>
+        <head>
+            <style>
+                .sidebar a {
+                    display: block;
+                    padding: 8px 16px;
+                    text-decoration: none;
+                    color: #000; /* Set the default text color */
+                    transition: all 0.3s ease; /* Added transition for all properties */
+                    transform-origin: center;
+                }
+        
+                .sidebar a:hover {
+                    background-color: #f0f0f0; /* Change this to the color you want */
+                    /* Modify other styles like text color, font weight, etc. */
+                    transform: scale(1.1); /* Change the scale factor as needed */
+                }
+            </style>
+        </head>
+        <body>
+            <div class="sidebar">
+            <a href="index.htm" target="_self">Home</a>
+            <a href="Tarot.htm" target="_self">Tarot Cards</a>
+            <a href="Banshee.htm" target="_self">Banshee</a>
+            <a href="Demon.htm" target="_self">Demon</a>
+            <a href="Deogen.htm" target="_self">Deogen</a>
+            <a href="Goryo.htm" target="_self">Goryo</a>
+            <a href="Hantu.htm" target="_self">Hantu</a>
+            <a href="Jinn.htm" target="_self">Dschinn</a>
+            <a href="Mare.htm" target="_self">Mare</a>
+            <a href="Moroi.htm" target="_self">Moroi</a>
+            <a href="Myling.htm" target="_self">Myling</a>
+            <a href="Obake.htm" target="_self">Obake</a>
+            <a href="Oni.htm" target="_self">Oni</a>
+            <a href="Onryo.htm" target="_self">Onryo</a>
+            <a href="Phantom.htm" target="_self">Phantom</a>
+            <a href="Poltergeist.htm" target="_self">Poltergeist</a>
+            <a href="Raiju.htm" target="_self">Raiju</a>
+            <a href="Revenant.htm" target="_self">Revenant</a>
+            <a href="Shade.htm" target="_self">Shade</a>
+            <a href="Spirit.htm" target="_self">Spirit</a>
+            <a href="Thaye.htm" target="_self">Thaye</a>
+            <a href="The_Mimic.htm" target="_self">The Mimic</a>
+            <a href="The_Twins.htm" target="_self">The Twins</a>
+            <a href="Wraith.htm" target="_self">Wraith</a>
+            <a href="Yokai.htm" target="_self">Yokai</a>
+            <a href="Yurei.htm" target="_self">Yurei</a>
+            </div>
+        </body>
+        </html>
+        
+        
+
+
+<div class="content">
+    <!-- Welcome section -->
+    <div class="welcome-section">
+        <h1 class="welcome-message">Welcome to Phasmophobia Wiki</h1>
+        <p class="sub-message">Thank you for visiting! Feel free to explore our website and enjoy the content.</p>
+		    <div class="footer-info">
+        <p>This website was created by Pommes203040 (steam) and Pommes203040 (discord).</p>
+        <p>I would love to get new information or if I spelled something wrong, feel free to contact me!</p>
+    </div>
+    </div>
+
+<head>
+    <style>
+   
+        /* Stylish box styles */
+        .styled-box {
+            background-color: #fff;
+            padding: 20px;
+			margin-right: 10px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+
+<div class="styled-box" style="display: flex; align-items: flex-start;">
+    <!-- Bild Container -->
+    <div style="margin-right: 10px;">
+        <img src="Dschinn.png" alt="Banshee Bild" width="400" height="300">
+    </div>
+    
+    <!-- Text Container -->
+    <div style="font-family: Arial, sans-serif; font-size: 14px; line-height: 1.5;">
+        <h1 class="welcome-message">**Dschinn**</h1>
+		<p style="max-width: 600px;">
+        <pre>
+Wenn man ihm nahekommt, kann er deine Geistige Gesundheit um 25% senken, 
+erkennbar durch das EMF 2-Signal am Stromkasten. Dies kann er nur tun, 
+wenn der Stromkasten eingeschaltet ist.
+Er kann die Jagd beginnen, wenn die geistige Gesundheit seines Opfers auf 50% fällt.
+Außerhalb von 3 Metern bewegt sich der Jinn mit 2,5 m/s, 
+solange er dich nicht sieht und bestimmte Bedingungen erfüllt sind. 
+Sobald er dich sieht und diese Kriterien erfüllt sind, bleibt die Geschwindigkeit bei 2,5 m/s.
+Er kann den Stromkasten nicht ausschalten, es sei denn, 
+bestimmte Bedingungen sind erfüllt, 
+wie die maximale Anzahl von Lichtern eingeschaltet ist und der Jinn ein zusätzliches einschaltet, 
+um den Stromkasten auszuschalten.
+        </pre>
+    </div>
+</div>
+
+<script>
+    function navigateTo(page) {
+        window.location.href = page;
+    }
+</script>
+
+</body>
+</html>
+
+
+
+</body>
+</html>

@@ -1,0 +1,638 @@
+	<!DOCTYPE html>
+<html lang="De">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+   <style>
+   
+        /* Your existing styles here */
+/* Sidebar styles */
+.sidebar {
+    /* ... (existing styles) */
+    overflow-y: auto; /* Enable vertical scrolling */
+}
+
+/* Arrow down indicator */
+.sidebar::after {
+    content: '\25BC'; /* Unicode for down arrow */
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 24px;
+    opacity: 0; /* Hide by default */
+    transition: opacity 0.3s ease-in-out;
+}
+/* Inside the <style> tag of your HTML */
+/* Hide the scrollbar */
+.sidebar::-webkit-scrollbar {
+    width: 0; /* Remove scrollbar width */
+    background: transparent; /* Set scrollbar background to transparent */
+}
+
+        /* Sidebar styles */
+        .sidebar {
+            width: 250px;
+            height: 100%;
+            background-image: url('background.avif');
+            background-size: cover;
+            position: fixed;
+            transition: 0.3s;
+            box-shadow: 3px 0 5px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Sidebar hover effect */
+        .sidebar:hover {
+            width: 300px;
+        }
+
+        /* Content styles */
+        .content {
+            margin-left: 270px;
+            padding: 15px;
+            background-color: #f2f2f2;
+        }
+
+        /* Text color for sidebar links */
+        a {
+            color: white;
+            text-decoration: none;
+        }
+
+        /* Sidebar links */
+        .sidebar a {
+            padding: 10px 20px;
+            text-align: center;
+            display: block;
+            background-color: #555;
+            border-radius: 5px;
+            font-size: 16px;
+            margin: 10px 0;
+        }
+
+        /* Add some icons to your sidebar links */
+        .sidebar a[href="Main.html"]::before {
+            content: ' ';
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            background-image: url('heim.PNG');
+            background-size: cover;
+            margin-right: 10px;
+        }
+
+        .sidebar a[href="About.html"]::before {
+            content: ' ';
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            background-image: url('benutzer-hinzufugen.PNG');
+            background-size: cover;
+            margin-right: 10px;
+        }
+
+        .sidebar a[href="Download.html"]::before {
+            content: ' ';
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            background-image: url('mappe.PNG');
+            background-size: cover;
+            margin-right: 10px;
+        }
+
+        .sidebar a[href="Second.html"]::before {
+            content: ' ';
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            background-image: url('umschlag.PNG');
+            background-size: cover;
+            margin-right: 10px;
+        }
+
+        .sidebar a[href="Contact.html"]::before {
+            content: ' ';
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            background-image: url('umschlag.PNG');
+            background-size: cover;
+            margin-right: 10px;
+        }
+
+        /* Welcome section */
+        .welcome-section {
+         background-image: url('Download.jpg');
+         background-size: cover;
+         background-position: center;
+         color: black;
+         padding: 100px;
+         text-align: center;
+        }
+
+
+        /* Styling for the welcome message */
+        .welcome-message {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        /* Styling for the sub-message */
+        .sub-message {
+            font-size: 18px;
+        }
+
+        /* Calendar and Clock container styles */
+        #calendar, #clock {
+            margin-top: 20px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+
+
+    <html>
+        <head>
+            <style>
+                .sidebar a {
+                    display: block;
+                    padding: 8px 16px;
+                    text-decoration: none;
+                    color: #000; /* Set the default text color */
+                    transition: all 0.3s ease; /* Added transition for all properties */
+                    transform-origin: center;
+                }
+        
+                .sidebar a:hover {
+                    background-color: #f0f0f0; /* Change this to the color you want */
+                    /* Modify other styles like text color, font weight, etc. */
+                    transform: scale(1.1); /* Change the scale factor as needed */
+                }
+            </style>
+        </head>
+        <body>
+            <div class="sidebar">
+            <a href="index.htm" target="_self">Home</a>
+            <a href="Tarot.htm" target="_self">Tarot Cards</a>
+            <a href="Banshee.htm" target="_self">Banshee</a>
+            <a href="Demon.htm" target="_self">Demon</a>
+            <a href="Deogen.htm" target="_self">Deogen</a>
+            <a href="Goryo.htm" target="_self">Goryo</a>
+            <a href="Hantu.htm" target="_self">Hantu</a>
+            <a href="Jinn.htm" target="_self">Dschinn</a>
+            <a href="Mare.htm" target="_self">Mare</a>
+            <a href="Moroi.htm" target="_self">Moroi</a>
+            <a href="Myling.htm" target="_self">Myling</a>
+            <a href="Obake.htm" target="_self">Obake</a>
+            <a href="Oni.htm" target="_self">Oni</a>
+            <a href="Onryo.htm" target="_self">Onryo</a>
+            <a href="Phantom.htm" target="_self">Phantom</a>
+            <a href="Poltergeist.htm" target="_self">Poltergeist</a>
+            <a href="Raiju.htm" target="_self">Raiju</a>
+            <a href="Revenant.htm" target="_self">Revenant</a>
+            <a href="Shade.htm" target="_self">Shade</a>
+            <a href="Spirit.htm" target="_self">Spirit</a>
+            <a href="Thaye.htm" target="_self">Thaye</a>
+            <a href="The_Mimic.htm" target="_self">The Mimic</a>
+            <a href="The_Twins.htm" target="_self">The Twins</a>
+            <a href="Wraith.htm" target="_self">Wraith</a>
+            <a href="Yokai.htm" target="_self">Yokai</a>
+            <a href="Yurei.htm" target="_self">Yurei</a>
+            </div>
+        </body>
+        </html>
+        
+        
+
+<div class="content">
+    <!-- Welcome section -->
+    <div class="welcome-section">
+        <h1 class="welcome-message">Welcome to Phasmophobia Wiki</h1>
+        <p class="sub-message">Thank you for visiting! Feel free to explore our website and enjoy the content.</p>
+        <div class="footer-info">
+            <p>This website was created by Pommes203040 (steam) and Pommes203040 (discord).</p>
+            <p>I would love to get new information or if I spelled something wrong, feel free to contact me!</p>
+            <!-- Link to credits -->
+            <a href="#credits">Website-Erstellung Credits</a>
+        </div>
+    </div>
+
+
+    <!-- Calendar container -->
+    <div id="calendar"></div>
+
+    <!-- Clock container -->
+    <div id="clock"></div>
+
+    <!-- Other content goes here -->
+<head>
+    <style>
+   
+    .styled-box {
+        background-color: #fff; /* Hier die Farbe der Box setzen */
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin-top: 20px;
+        overflow: hidden; /* Inhalt verstecken, der �ber die Box hinausgeht */
+    }
+
+    /* F�gt die Hintergrundfarbe nach dem Text hinzu */
+    .content::after {
+        content: "";
+        display: block;
+        background-color: #f2f2f2; /* Hier die Hintergrundfarbe der Seite setzen */
+        height: 380px; /* H�he entsprechend anpassen */
+        margin-top: -270px; /* Negative Margin, um das �berlappen zu verhindern */
+    }
+        /* Copy button styles */
+        .copy-button {
+            background-color: #4CAF50;
+            color: white;
+			margin-right: 10px;
+			margin-top: 15px;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-bottom: 10px;
+        }
+
+        /* Download button styles */
+        .download-button {
+            background-color: #008CBA;
+            color: white;
+			 margin-right: 10px;
+			 margin-top: 15px;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+
+
+
+<div class="styled-box" style="display: flex; align-items: flex-start;">
+    <!-- Bild Container -->
+    <div style="margin-right: 10px;">
+        <img src="Tarot Cards.jpg" alt="Banshee Bild" width="400" height="300">
+    </div>
+    
+
+    <!-- Text Container -->
+    <div style="font-family: Arial, sans-serif; font-size: 14px; line-height: 1.5;">
+        <h1 class="welcome-message">**Tarot Cards**</h1>
+		<p style="max-width: 600px;">
+        <pre>
+        Taro Karten sind eins der 7 verfluchten Gegenstände
+        </pre>
+    </div>
+</div>
+<div class="styled-box" style="display: flex; align-items: flex-start;">
+    <!-- Bild Container -->
+    <div style="margin-right: 10px;">
+        <img src="The Tower.png" alt="Banshee Bild" width="400" height="300">
+    </div>
+    
+
+    <!-- Text Container -->
+    <div style="font-family: Arial, sans-serif; font-size: 14px; line-height: 1.5;">
+        <h1 class="welcome-message">**The Tower**</h1>
+		<p style="max-width: 600px;">
+        <pre>
+Farbe:
+-Blau
+
+Effekt:
+-Erzwingt eine Interaktion
+
+Wahrscheinlichkeit:
+ 20%
+
+        </pre>
+    </div>
+</div>
+<div class="styled-box" style="display: flex; align-items: flex-start;">
+    <!-- Bild Container -->
+    <div style="margin-right: 10px;">
+        <img src="Death.png" alt="Banshee Bild" width="400" height="300">
+    </div>
+    
+
+    <!-- Text Container -->
+    <div style="font-family: Arial, sans-serif; font-size: 14px; line-height: 1.5;">
+        <h1 class="welcome-message">**Death**</h1>
+		<p style="max-width: 600px;">
+        <pre>
+Farbe:
+-Lila
+
+Effekt:
+-Eine verfluchte jagd wird gestartet
+
+Wahrscheinlichkeit:
+ 10%
+
+        </pre>
+    </div>
+</div>
+<div class="styled-box" style="display: flex; align-items: flex-start;">
+    <!-- Bild Container -->
+    <div style="margin-right: 10px;">
+        <img src="The High Priestess.png" alt="Banshee Bild" width="400" height="300">
+    </div>
+    
+
+    <!-- Text Container -->
+    <div style="font-family: Arial, sans-serif; font-size: 14px; line-height: 1.5;">
+        <h1 class="welcome-message">**The High Priestess**</h1>
+		<p style="max-width: 600px;">
+        <pre>
+Farbe:
+-Gelb
+
+Effekt:
+-Belebt ein Gestorbenen Spieler wieder 
+     ( wirkt auch vor dem Tod )
+
+Wahrscheinlichkeit:
+ 2%
+
+
+        </pre>
+    </div>
+</div>
+<div class="styled-box" style="display: flex; align-items: flex-start;">
+    <!-- Bild Container -->
+    <div style="margin-right: 10px;">
+        <img src="The Devil.png" alt="Banshee Bild" width="400" height="300">
+    </div>
+    
+
+    <!-- Text Container -->
+    <div style="font-family: Arial, sans-serif; font-size: 14px; line-height: 1.5;">
+        <h1 class="welcome-message">**The Devil**</h1>
+		<p style="max-width: 600px;">
+        <pre>
+Farbe:
+-Dunkel Pink
+
+Effekt:
+-Erzwingt ein Geisterevent beim Spieler
+
+Wahrscheinlichkeit:
+ 10%
+
+        </pre>
+    </div>
+</div>
+<div class="styled-box" style="display: flex; align-items: flex-start;">
+    <!-- Bild Container -->
+    <div style="margin-right: 10px;">
+        <img src="The Wheel Of Fortune.png" alt="Banshee Bild" width="400" height="300">
+    </div>
+    
+
+    <!-- Text Container -->
+    <div style="font-family: Arial, sans-serif; font-size: 14px; line-height: 1.5;">
+        <h1 class="welcome-message">**The Wheel Of Fortune**</h1>
+		<p style="max-width: 600px;">
+        <pre>
+Farbe:
+-Grün (Geisteszustand steigt)
+-Rot  (Geisteszustand sinkt)
+
+Effekt:
+-Der Spieler gewinnt 25% Verstand, wenn die Karte grün brennt,
+ oder verliert 25% Verstand, wenn die Karte rot brennt.
+
+Wahrscheinlichkeit:
+ 20%
+        </pre>
+    </div>
+</div>
+<div class="styled-box" style="display: flex; align-items: flex-start;">
+    <!-- Bild Container -->
+    <div style="margin-right: 10px;">
+        <img src="The Hermit.png" alt="Banshee Bild" width="400" height="300">
+    </div>
+    
+
+    <!-- Text Container -->
+    <div style="font-family: Arial, sans-serif; font-size: 14px; line-height: 1.5;">
+        <h1 class="welcome-message">**The Hermit**</h1>
+		<p style="max-width: 600px;">
+        <pre>
+Farbe:
+-Hellblau
+
+Effekt:
+-Teleportiert den Geist zurück in seinen Geisterraum und hält
+ ihn dort 1 Minute lang gefangen.
+
+Wahrscheinlichkeit:
+ 10%
+        </pre>
+    </div>
+</div>
+<div class="styled-box" style="display: flex; align-items: flex-start;">
+    <!-- Bild Container -->
+    <div style="margin-right: 10px;">
+        <img src="The Hanged Man.png" alt="Banshee Bild" width="400" height="300">
+    </div>
+    
+
+    <!-- Text Container -->
+    <div style="font-family: Arial, sans-serif; font-size: 14px; line-height: 1.5;">
+        <h1 class="welcome-message">**The Hanged Man**</h1>
+		<p style="max-width: 600px;">
+        <pre>
+Farbe:
+-Keine
+
+Effekt:
+-Der Spieler Wird sofort getötet
+
+Wahrscheinlichkeit:
+ 1%
+        </pre>
+    </div>
+</div>
+<div class="styled-box" style="display: flex; align-items: flex-start;">
+    <!-- Bild Container -->
+    <div style="margin-right: 10px;">
+        <img src="The Moon.png" alt="Banshee Bild" width="400" height="300">
+    </div>
+    
+
+    <!-- Text Container -->
+    <div style="font-family: Arial, sans-serif; font-size: 14px; line-height: 1.5;">
+        <h1 class="welcome-message">**The Moon**</h1>
+		<p style="max-width: 600px;">
+        <pre>
+Farbe:
+-Weiß
+
+Effekt:
+-Geisteszustand sinkt auf 0%
+
+Wahrscheinlichkeit:
+ 5%
+        </pre>
+    </div>
+</div>
+<div class="styled-box" style="display: flex; align-items: flex-start;">
+    <!-- Bild Container -->
+    <div style="margin-right: 10px;">
+        <img src="The Fool.png" alt="Banshee Bild" width="400" height="300">
+    </div>
+    
+
+    <!-- Text Container -->
+    <div style="font-family: Arial, sans-serif; font-size: 14px; line-height: 1.5;">
+        <h1 class="welcome-message">**The Fool**</h1>
+		<p style="max-width: 600px;">
+        <pre>
+Farbe:
+-Pink
+
+Effekt:
+-Deaktiviert den Effekt der vorherigen Karte
+
+Wahrscheinlichkeit:
+ 17% (100% wärend einer Jagd)
+        </pre>
+    </div>
+</div>
+
+
+
+
+<div class="styled-box" style="display: flex; align-items: flex-start;">
+    <!-- Bild Container -->
+    <div style="margin-right: 10px;">
+        <img src="The Sun.png" alt="Banshee Bild" width="400" height="300">
+    </div>
+    
+
+    <!-- Text Container -->
+    <div style="font-family: Arial, sans-serif; font-size: 14px; line-height: 1.5;">
+        <h1 class="welcome-message">**The Sun**</h1>
+		<p style="max-width: 600px;">
+        <pre>
+Farbe:
+-Gelb
+
+Effekt:
+-Geisteszustand steig auf 100%
+
+Wahrscheinlichkeit:
+ 5%
+
+        </pre>
+    </div>
+</div>
+
+
+
+
+
+        </pre>
+		
+		
+		    <div id="credits">
+        <h2>Website-Erstellung Credits</h2>
+        <p>Diese Website wurde erstellt von Pommes203040 (steam) und ghgh8948 �\_(?)_/� (discord).</p>
+        <p>Ein Besonderen Dank an Diese Personen:</p>
+	<div style="display: flex; justify-content: space-between; margin-top: px;">
+    <div style="text-align: center;">
+	
+        <img src="Profile.png" alt="Profile Picture 1" style="width: 100px; height: 100px; border-radius: 50%;">
+        <div style="margin-top: 10px;">Harpy's Eye</div>
+    </div>
+    <div style="text-align: center;">
+        <img src="Profile2.png" alt="Profile Picture 2" style="width: 100px; height: 100px; border-radius: 50%;">
+        <div style="margin-top: 10px;">Elmotrix</div>
+    </div>
+    <div style="text-align: center;">
+        <img src="Natalie.png" alt="Profile Picture 3" style="width: 100px; height: 100px; border-radius: 50%;">
+        <div style="margin-top: 10px;">Natalie</div>
+    </div>
+    <div style="text-align: center;">
+        <img src="Profile4.png" alt="Profile Picture 4" style="width: 100px; height: 100px; border-radius: 50%;">
+        <div style="margin-top: 10px;">No One</div>
+    </div>
+</div>
+</div>
+    </div>
+
+    </div>
+</div>
+
+<script>
+    function copyText() {
+        var textArea = document.getElementById("textContent");
+        var text = textArea.innerText || textArea.textContent;
+        
+        navigator.clipboard.writeText(text).then(function() {
+            alert("Text copied to clipboard!");
+        }).catch(function(err) {
+            console.error('Unable to copy text to clipboard', err);
+        });
+    }
+
+    function downloadFile() {
+        var text = document.getElementById("textContent").innerText;
+        var blob = new Blob([text], { type: "text/plain" });
+        var url = URL.createObjectURL(blob);
+        var a = document.createElement("a");
+        a.href = url;
+        a.download = "Phasmophobia Geister.txt";
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+        URL.revokeObjectURL(url);
+    }
+</script>
+
+<script>
+    function navigateTo(page) {
+        window.location.href = page;
+    }
+</script>
+
+</body>
+</html>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        // Clock
+        function updateClock() {
+            var now = new Date();
+            var hours = now.getHours();
+            var minutes = now.getMinutes();
+            var seconds = now.getSeconds();
+
+            document.getElementById('clock').innerHTML = `${hours}:${minutes}:${seconds}`;
+        }
+
+        setInterval(updateClock, 1000); // ev. second
+        updateClock(); 
+
+        // Kalender
+        var today = new Date();
+        var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+        document.getElementById('calendar').innerHTML = today.toLocaleDateString('en-US', options);
+    });
+</script>
+
+</body>
+</html>
